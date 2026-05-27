@@ -2,5 +2,5 @@ streamlit
 numpy
 pillow
 matplotlib
-keras
-h5py
+tensorflow
+scikit-learn

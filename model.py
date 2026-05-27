@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
-from keras.applications.efficientnet import preprocess_input
-from keras.models import load_model
+import tensorflow as tf
+from tensorflow.keras.applications.efficientnet import EfficientNetB0, preprocess_input
 
 
 IMG_SIZE = 224
@@ -12,7 +12,7 @@ def load_model():
     """
     Loads fine-tuned EfficientNet model.
     """
-    model = load_model(MODEL_PATH)
+    model = tf.keras.models.load_model(MODEL_PATH)
     print("Successfully loaded weights")
     return {"model": model, "backend": "trained"}
 
