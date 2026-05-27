@@ -2,8 +2,6 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
-import matplotlib.gridspec as gridspec
-import io
 import time
 
 from augmentations import apply_all_augmentations, AUGMENTATION_NAMES
