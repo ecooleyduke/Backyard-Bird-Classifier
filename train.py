@@ -1,7 +1,7 @@
 import tensorflow as tf
-from keras import layers
-from keras.applications import EfficientNetB0
-from keras.applications.efficientnet import preprocess_input
+from tensorflow.keras import layers
+from tensorflow.keras.applications import EfficientNetB0
+from tensorflow.keras.applications.efficientnet import preprocess_input
 import os
 import json
 
